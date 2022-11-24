@@ -41,3 +41,128 @@ img {
     margin: 0 auto;
     width: 90%;
 }
+
+.header {
+    background-image: url("../img/header_bg.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 10rem;
+    padding: 5rem 0rem;
+}
+
+@media ( min-width: 768px ){
+    .header {
+        background-size: 55rem;
+    }
+}
+
+@media ( min-width: 992px ){
+    .header {
+        background-size: 70rem;
+    }
+}
+
+@media ( min-width: 1280px ){
+    .header {
+        background-size: 100rem;
+    }
+}
+
+
+@media ( min-width: 1920px ){
+    .header {
+        background-size: 130rem;
+    }
+}
+
+.header__contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media ( min-width: 768px ){
+    .header__barra {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header__logo {
+    width: 15rem;
+    margin: 0 auto 3rem auto;
+}
+
+@media ( min-width: 768px ){
+    .header__logo {
+        margin: 0px;
+    }
+
+    .header__grid {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 4rem;
+        align-items: center;
+    }
+}
+
+.header__heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media ( min-width: 768px ){
+    .header__heading {
+        text-align: left;
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+}
+
+@media ( min-width: 768px ){
+    .header__imagen {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+}
+
+.header__boton {
+    background-color: var( --primario );
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: var( --blanco );
+    margin-bottom: 4rem;
+}
+
+@media ( min-width: 768px ){
+    .header__boton {
+        padding: 1rem 3rem;
+        display: inline-block;
+    }
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media ( min-width: 768px ){
+    .navegacion {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+
+    }
+}
+
+.navegacion__link {
+    color: var( --primario );
+}
+
+@media ( min-width: 768px ){
+    .navegacion__link {
+        color: var( --blanco );
+    }
+}
